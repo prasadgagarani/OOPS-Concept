@@ -1,0 +1,39 @@
+//This program is a example of Interface in Java
+
+interface TV
+{
+    public void version();
+
+    public void type();
+}
+
+class Onida implements TV
+{
+    @Override
+    public void version()
+    {
+        System.out.println("The system version is 0.230");
+    }
+
+    @Override
+    public void type()
+    {
+        System.out.println("The type is LED");
+    }
+
+    public void mybrand()
+    {
+        System.out.println("This is onida");
+    }
+}
+
+public class Samplee
+{
+    public static void main(String[] args)
+    {
+        Onida o=new Onida();
+        o.version();
+        o.type();
+        o.mybrand();
+    }
+}
