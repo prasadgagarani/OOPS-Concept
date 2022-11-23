@@ -1,0 +1,39 @@
+//This is a Abstraction example
+
+abstract class A
+{
+    public A()
+    {
+        System.out.print("This is a constructor");
+    }
+
+    public void methodone()
+    {
+        System.out.println("This is method one");
+    }
+
+    public abstract void methodtwo();
+
+}
+
+class B extends A
+{
+    @Override
+    public void methodtwo()
+    {
+        System.out.println("this is method two");
+    }
+
+}
+
+public class Sample
+{
+    public static void main(String [] args)
+    {
+        
+        B myobj=new B();
+        myobj.methodtwo();
+        myobj.methodone();
+
+    }
+}
